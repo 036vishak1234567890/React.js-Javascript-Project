@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.light {
+    background-color: white;
+    transition: 0.7s;
+}
+
+.dark {
+    background-color: black;
+    transition: 0.7s;
+}
+
+.mode {
+    position: relative;
+    width: 128px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 78px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.lightBtn {
+    background-color: #A2D1FD;
+    box-shadow: 0px 4px 0px 0px rgba(0,255,255,1), 0px 7px 0px 0px black;
+    transition: 0.7s;
+}
+
+.darkBtn {
+    background-color: #1F2533;
+    box-shadow: 0px 4px 0px 0px rgb(65, 65, 65), 0px 7px 0px 0px black;
+    transition: 0.7s;
+}
+
+.lightBtn:hover {
+    box-shadow: 0px 0px 0px 0px rgba(0,255,255,1), 0px 3px 0px 0px black;
+}
+
+.darkBtn:hover {
+    box-shadow: 0px 1.5px 0px 0px rgba(0,255,255,1), 0px 1.5px 0px 0px black;
+}
+
+.mainIcon {
+    position: absolute;
+    left: 4%;
+    top: 13%;
+    transition: 0.7s;
+}
+
+.mainIcon img {
+    height: 40px;
+    position: absolute
+}
+
+.sun {
+    transition: 0.7s;
+}
+
+.moon {
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.leftClouds {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+
+.cloud1 {
+    position: absolute;
+    left: 9px;
+    bottom: 0;
+}
+
+.cloud2 {
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+}
+
+.rightClouds {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 0.7S;
+}
+
+.cloud3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.cloud4 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.stars {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    opacity: 0;
+    transition: 0.7s;
+}
+.login {
+    margin-top: 100px;
+    height: 38px;
+    width: 380px;
+    cursor: pointer;
+    border-radius: 14px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 7px 0px 0px #454545;
+    transition: 0.6s;
+}
+
+.login:hover {
+    height: 43px;
+    box-shadow: 0px 4px 0px 0px #454545;
+}
+
+.btnIcons {
+    position: relative;
+    display: inline;
+    margin-left: 5px;
+}
+
+.login img {
+    position: absolute;
+    transition: 1s;
+}
+
+.tick {
+    opacity: 0;
+}
+
+.trail {
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #00F0FF;
+    filter: blur(12px);
+}
